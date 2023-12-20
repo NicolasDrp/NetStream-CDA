@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  bddpostgreNetStream:
+    image: postgres:14.1-alpine
+    container_name: bddpostgreNetStream
+    restart: always
+    environment:
+      - POSTGRES_USER=NetStream
+      - POSTGRES_PASSWORD=Oxymore
+    ports:
+      - '9256:5432'
+    volumes:
+      - ./:/docker-entrypoint-initdb.d
+    
