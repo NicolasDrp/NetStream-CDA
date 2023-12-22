@@ -622,7 +622,7 @@ CREATE TRIGGER trigger_update_modified_at AFTER UPDATE ON public."Movie" FOR EAC
 REVOKE USAGE ON SCHEMA public FROM PUBLIC;
 GRANT ALL ON SCHEMA public TO PUBLIC;
 
-CREATE ROLE "Client" WITH PASSWORD 'Oxymore';
+CREATE ROLE "Client" WITH PASSWORD 'MDPclient';
 
 
 --
