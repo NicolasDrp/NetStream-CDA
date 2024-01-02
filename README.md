@@ -49,7 +49,7 @@ FROM public."Actor" WHERE DATE_PART('year', now()::date) - DATE_PART('year', bir
 ```sql
 SELECT lastname,firstname 
 FROM public."Actor" INNER JOIN public."Act" on "Actor".id_actor = "Act".id_actor 
-WHERE "Act".id_movie IN (SELECT id_movie FROM public."Movie" WHERE title = 'L Odyssée du Futur';
+WHERE "Act".id_movie IN (SELECT id_movie FROM public."Movie" WHERE title = 'L Odyssée du Futur');
 ```
 
 - **La liste des films pour un acteur/actrice donné**
